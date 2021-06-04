@@ -85,6 +85,7 @@ function my() {
 
 		sleep 3
 		read -s -k "?'.__current is not found. Press [ENTER] to 'Create' it"
+		mkdir ${MY_CURRENT_PATH_FULL}
 		clear
 	fi
 
