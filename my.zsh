@@ -21,6 +21,7 @@ function my() {
 	local MY_SETTINGS_FILE="${MY_ZSH_ROOT_PATH}/_my_settings.zsh"
 
 	# load MY_SETTINGS_FILE
+	. ${MY_SETTINGS_FILE}
 
 	# ++++++++++++++++++++++++++++++++++++
 	# my-clear
@@ -101,8 +102,6 @@ function my() {
 		read -s -k "?'.my is ready. Press [ENTER] to continue."
 
 		if [ "${OBJECT}" = "${OBJECT}" ]; then
-
-			. ${MY_SETTINGS_FILE}
 
 			# get inits
 			. ${MY_INIT_CREATOR_PATH_FULL}
